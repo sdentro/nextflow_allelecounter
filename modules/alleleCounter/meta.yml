@@ -1,0 +1,34 @@
+name: alleleCounter
+description: Counts A/C/G/T at every position of a list of loci provided
+tools:
+  - alleleCounter:
+      description: Efficiently counts alleles
+      homepage: https://github.com/cancerit/alleleCount
+  - tar:
+      description: Package output into a single archive
+      homepage: NA
+input:
+ - samplename:
+    type: val
+    description: samplename to use to name the output files
+ - bam:
+    type: path
+    description: path to the bam file
+ - bai:
+    type: path
+    description: path to the bai file corresponding to bam
+ - loci:
+    type: path
+    description: path to directory where Battenberg allele loci are stored
+ - output:
+    type: val
+    description: 
+ - chrom:
+    type: val
+    description: path to a file that lists the available chromosomes, one on each line 
+output:
+  - meta:
+      type: path
+      description: the path where the alleleCount output is available
+authors:
+  - "@sdentro"

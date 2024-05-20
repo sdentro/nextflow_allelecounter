@@ -1,0 +1,6 @@
+params.samplename = "[samplename]"
+params.bam = "[bamfile]"
+params.bai = "[baifile]"
+params.output = "[samplename]_alleleFrequencies_chr"
+params.loci = "[path to battenberg_1000genomesloci_phase3]"
+params.chromosomes = "[path to chromosomes.txt]"
